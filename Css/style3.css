@@ -18,8 +18,17 @@
 }
 
 .fondo{
-    background-image: url(/Imagenes/fondo2.jpg);
+    background-image: url(../Imagenes/fondo2.jpg);
     height: 110vh;
     background-size: cover;
     background-position: center;
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border-width: 50vh;
+    background-color: #b9b9af;
 }

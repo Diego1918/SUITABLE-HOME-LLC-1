@@ -4,7 +4,7 @@
     margin-bottom: 0;
 }
 .fondo{
-    background-image: url(/Imagenes/fondo2.jpg);
+    background-image: url(../Imagenes/fondo2.jpg);
     height: 110vh;
     background-size: cover;
     background-position: center;
