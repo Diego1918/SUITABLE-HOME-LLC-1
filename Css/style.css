@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +10,193 @@
   background-size: cover;
   background-position: center;
 }
+.fondo2{
+  background-image: url(fondo2.jpg);
+  height: 110vh;
+  background-size: cover;
+  background-position: cover;
+}
 h1 {
   align-items: center;
   display: flex;
   justify-content: center;
-  font-style: italic;
   text-align: center;
-  color: rgb(221, 32, 32);
-
+  color:#22142b ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 220vh;
+  height:7vh;
 }
+
+
+
+h2 {color: #22142b;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Georgia;
+  height: 30vh;
+  border-width: 50vh;
+}
+
+h5{
+  text-align: center;
+  padding-top: 0px;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 80px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+body{
+  font-family: sans-serif;
+  overflow: visible;
+  user-select: none;
+}
+.select{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-width: 50vh
+}
+.boton{
+  align-items: center;
+  justify-content: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+Men-u 
+#menu ul {
+  list-style: none; 
+  margin:0;
+  padding: 0;
+}
+
+#menu #item{
+   float:left;
+}
+
+#menu #item a{
+   background-color: white;
+   color: black;
+   padding: 12px 22px;
+   display: block;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   text-decoration: none;
+}
+
+#menu #despl{
+   display: none;
+   position: absolute;
+   min-width: 120px;
+}
+
+#menu #item a:hover{
+   background-color: rgb(144, 243, 243);
+   color:black
+}
+
+#menu #item:hover #despl{
+   display:block;
+}
+
+.navegacion1{
+  width: 15em;
+  height: 3em;
+  border-radius: 50px;}
+
+.select2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  border-width: 20vh;
+  background-color: #98a0d8;
+}
+
+Barra 
+.navbar {
+        
+  background-color:  #98a0d8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 220vh;
+  height:7vh;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #22142b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #98a0d8;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #22142b;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#98a0d8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#98a0d8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #98a0d8;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;}
+
+Foote-r
 .social{
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   padding: 10px;
   padding-bottom: 0px;
@@ -28,6 +204,7 @@ h1 {
   margin-top: 2px;
   align-items: center;
   justify-items: center;
+  display: flex;
 
 }
 .social a{
@@ -58,16 +235,7 @@ h1 {
   position: relative;
   justify-content: center;
 }
-h5{
-  text-align: center;
-  padding-top: 0px;
-  font-weight: 500;
-  opacity: 0.8;
-  font-size: 80px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
+
 @media (max-width: 767px) {
 
     .curve{
@@ -82,86 +250,6 @@ h5{
     list-style: none;
     text-decoration: none;
   }
-  body{
-    font-family: sans-serif;
-    overflow: visible;
-    user-select: none;
-  }
 
 
-nav .logo{
-  color: rgb(250, 247, 247);
-  font-size: 20px;
-  font-weight: bold;
-  justify-content: center;
-  padding-left: 50px;
-  text-decoration: none;
-  
-  
-  
 
-
-}
-nav{
-  height: 60px;
-  background: #c4b880;
-  box-shadow: 0 5px 20px rgba(0,0,0,.4);
-  text-decoration: none;
-}
-nav ul{
-  float: right;
-  margin-right: 60px;
-}
-nav ul li{
-  display: inline-block;
-}
-nav ul li a{
-  color: white;
-  display:block;
-  padding: 0 15px;
-  line-height: 30px;
-  font-size: 18px;
-  background: #063247;
-  transition: .3s;
-  padding-top: 19px;
-
-  
-}
-nav ul li a:hover,
-nav ul li a.active{
-  color: #23dbdb;
-}
-nav ul ul{
-  position: absolute;
-  top: 85px;
-  border-top: 3px solid #23dbdb;
-  opacity: 0;
-  visibility: hidden;
-}
-nav ul li:hover > ul{
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-  transition: .3s linear;
-}
-nav ul ul li{
-  width: 150px;
-  display: list-item;
-  position: relative;
-  border: 1px solid #042331;
-  border-top: none;
-}
-nav ul ul li a{
-  line-height: 50px;
-}
-nav ul ul ul{
-  border-top: none;
-}
-nav ul ul ul li{
-  position: relative;
-  top: -70px;
-  left: 150px;
-}
-nav ul ul li a i{
-  margin-left: 45px;
-}
