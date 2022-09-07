@@ -39,6 +39,7 @@ h2 {color: #22142b;
   border-width: 50vh;
 }
 
+
 h5{
   text-align: center;
   padding-top: 0px;
@@ -51,7 +52,7 @@ h5{
 }
 
 body{
-  font-family: sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: visible;
   user-select: none;
 }
@@ -71,45 +72,7 @@ body{
   flex-direction: column;
 }
 Men-u 
-#menu ul {
-  list-style: none; 
-  margin:0;
-  padding: 0;
-}
 
-#menu #item{
-   float:left;
-}
-
-#menu #item a{
-   background-color: white;
-   color: black;
-   padding: 12px 22px;
-   display: block;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 16px;
-   text-decoration: none;
-}
-
-#menu #despl{
-   display: none;
-   position: absolute;
-   min-width: 120px;
-}
-
-#menu #item a:hover{
-   background-color: rgb(144, 243, 243);
-   color:black
-}
-
-#menu #item:hover #despl{
-   display:block;
-}
-
-.navegacion1{
-  width: 15em;
-  height: 3em;
-  border-radius: 50px;}
 
 .select2{
   display: flex;
@@ -120,136 +83,79 @@ Men-u
   border-width: 20vh;
   background-color: #98a0d8;
 }
-
-Barra 
-.navbar {
-        
-  background-color:  #98a0d8;
+Barra1
+nav{
+  width: 900px;
+  margin: auto;
+  background-color: #98a0d8;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 220vh;
-  height:7vh;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: #22142b;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #98a0d8;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: #22142b;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:#98a0d8;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:#98a0d8;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #98a0d8;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-display: block;}
-
-Foote-r
-.social{
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 0px;
-  border-top: 1px solid rgba(82, 68, 71, 0.734);
-  margin-top: 2px;
-  align-items: center;
-  justify-items: center;
-  display: flex;
-
-}
-.social a{
-  font-size: 22px;
-  width: 45px;
-  height: 45px;
-  line-height: 39px;
-  display: inline-block;
-  border-radius: 50%;
-  border: 2px solid #423c40;
-  box-shadow: 0px 0px 0px 1px rgba(213, 18, 18, 0.4);
-  margin: 10px;
-  color: rgb(214, 71, 31);
-  opacity: 0.7;
-  transition: 0.3s ease-in-out;
-}
-.social a:hover{
-  opacity: 0.9;
-  box-shadow: 0px 1px 3px 2px rgba(220, 14, 14, 0.9);
-}
-.copyright{
-  text-align: center;
-  padding-top: 24px;
-  font-weight: 500;
-  opacity: 0.8;
   font-size: 20px;
+  margin-top: 50px;
+  
+  
+}
+.menu{
+  list-style: none;
   display: flex;
-  position: relative;
-  justify-content: center;
+  justify-content:space-around;
+}
+.menu{
+  
+  padding:15px;
+  color:#22142b;
+  text-decoration: none;
+  background-color: #98a0d8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.menu > li:hover{
+  background-color: #9ea9ff;
+}
+.ciudad{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: #98a0d8;
+}
+.menu li:hover .ciudad{
+  display: block;
+}
+.ciudad li:hover{
+  background-color: cornflowerblue;
+}
+.ciudad li a{
+  display: block;
+}
+.ciudad li:hover{
+  background-color: cornflowerblue;
 }
 
-@media (max-width: 767px) {
+.ciudadVerdad{
+  position: relative;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: cornflowerblue;
 
-    .curve{
-      left: 5%;
-      height: 70%;
-    }
-  }
-  
-  *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-  }
+}
+.ciudad li:hover .ciudadVerdad{
+  display: block;
+}
+.ciudadVerdad li:hover{
+  background-color: rgb(188, 204, 233);
+}
+.ciudadVerdad li a{
+  display: block;
+}
+li a{
+color: #22142b;
+text-decoration: none;
+text-decoration-line: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 
 
 
