@@ -5,7 +5,7 @@
   margin-bottom: 0;
 }
 .fondo {
-  background-image: url(/Imagenes/fondo2.jpg);
+  background-image: url(../Imagenes/fondo2.jpg);
   height: 110vh;
   background-size: cover;
   background-position: center;
@@ -22,7 +22,7 @@ h1 {
   justify-content: center;
   text-align: center;
   color:#22142b ;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
   width: 220vh;
   height:7vh;
 }
@@ -34,7 +34,7 @@ h2 {color: #22142b;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-family: Georgia;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
   height: 30vh;
   border-width: 50vh;
 }
@@ -52,7 +52,7 @@ h5{
 }
 
 body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
   overflow: visible;
   user-select: none;
 }
@@ -88,7 +88,7 @@ nav{
   width: 900px;
   margin: auto;
   background-color: #98a0d8;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   margin-top: 50px;
   
@@ -105,7 +105,7 @@ nav{
   color:#22142b;
   text-decoration: none;
   background-color: #98a0d8;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
   
 }
 .menu > li:hover{
@@ -152,7 +152,7 @@ li a{
 color: #22142b;
 text-decoration: none;
 text-decoration-line: none;
-font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
