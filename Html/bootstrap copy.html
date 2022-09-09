@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title> Prueba de modal </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/styleBootstrap.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Direcciones de las casas -->
+    <a   data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Calle busquela carrera encuentrela
+    </a><br>
+
+    <a   data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Calle busquela carrera encuentrela bis
+    </a>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lista de elementos:
+            A
+            B
+            C
+            D
+            <!-- <img src="../img/libro_azul.jpg" style="width:100%"> -->
+            <div class="bogota">
+              <span class="linea"></span>
+              <section class="galeria">
+                  <a href="#image1"><img src="../Imagenes/39a45b45-1d97-42f1-83fa-bde43a30a72c.jpg" alt="">
+                  </a>
+                  <a href="#image2"><img src="../Imagenes/4353c74c-0276-421c-8ae2-a0377662ae1e.jpg" alt="">
+                  </a>
+                  <a href="#image3"><img src="../Imagenes/b805ecfb-c736-439e-9f3a-83c7b8d5c2b7.jpg" alt="">
+                  </a>
+                  <a href="#image4"><img src="../Imagenes/f5eecc1a-3989-4997-b87f-6a2d747f039c.jpg" alt="">
+                  </a>
+                  <a href="#image5"><img src="../Imagenes/facebook.png" alt="">
+                  </a>
+                  <a href="#image6"><img src="../Imagenes/icono.png" alt="">
+                  </a>
+              </section>
+
+              <article class="light-box" id="image1">
+                <a href="#image6" class="next">←</a>
+                <img src="../Imagenes/39a45b45-1d97-42f1-83fa-bde43a30a72c.jpg" alt="">
+                <a href="#image2" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+
+              
+
+              <article class="light-box" id="image2">
+                <a href="#image1" class="next">←</a>
+                <img src="../Imagenes/4353c74c-0276-421c-8ae2-a0377662ae1e.jpg" alt="">
+                <a href="#image3" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+
+              <article class="light-box" id="image3">
+                <a href="#image2" class="next">←</a>
+                <img src="../Imagenes/b805ecfb-c736-439e-9f3a-83c7b8d5c2b7.jpg" alt="">
+                <a href="#image4" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+
+              <article class="light-box" id="image4">
+                <a href="#image3" class="next">←</a>
+                <img src="../Imagenes/f5eecc1a-3989-4997-b87f-6a2d747f039c.jpg" alt="">
+                <a href="#image5" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+
+              <article class="light-box" id="image5">
+                <a href="#image4" class="next">←</a>
+                <img src="../Imagenes/facebook.png" alt="">
+                <a href="#image6" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+
+              <article class="light-box" id="image6">
+                <a href="#image5" class="next">←</a>
+                <img src="../Imagenes/icono.png" alt="">
+                <a href="#image1" class="next">→</a>
+                <a href="" class="close">X</a>
+
+              </article>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
