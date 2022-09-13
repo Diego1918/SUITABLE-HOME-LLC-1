@@ -16,6 +16,10 @@
   background-size: cover;
   background-position: cover;
 }
+
+#banner {
+  width: 100%;
+}
 h1 {
   align-items: center;
   display: flex;
@@ -23,11 +27,9 @@ h1 {
   text-align: center;
   color:#22142b ;
   font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
-  width: 220vh;
   height:7vh;
+  margin-top: 25px;
 }
-
-
 
 h2 {color: #22142b;
   align-items: center;
@@ -202,5 +204,15 @@ ul.socialIcons {
   box-shadow: 0 0 16px #00aced;
 }
 
-
+#fraseredes {
+  color: #22142b;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
+  height:7vh;
+  font-size: large; 
+  font-weight: 700;
+}
 
