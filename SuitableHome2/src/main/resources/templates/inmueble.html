@@ -17,31 +17,31 @@
 					<form th:action="@{/departamentos/{id}(id=${propiedades.id})}" th:object="${propiedades}" method="POST">
 						<div class="form-group">
 							<label>Dirección </label>
-							<input type="text" name="nombre" th:field="*{direccion}" class="form-control" placeholder="Digite su nombre..." required>
+							<input type="text" name="nombre" th:field="*{direccion}" class="form-control" placeholder="Digite su nombre..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Número de habitaciones </label>
-							<input type="text" name="direccion" th:field="*{habitaciones}" class="form-control" placeholder="Digite su direccion..." required>
+							<input type="text" name="direccion" th:field="*{habitaciones}" class="form-control" placeholder="Digite su direccion..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Número de baños </label>
-							<input type="text" name="email" th:field="*{banos}" class="form-control" placeholder="Digite su email..." required>
+							<input type="text" name="email" th:field="*{banos}" class="form-control" placeholder="Digite su email..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Área en metros cuadrados </label>
-							<input type="text" name="nombre" th:field="*{metros2}" class="form-control" placeholder="Digite su nombre..." required>
+							<input type="text" name="nombre" th:field="*{metros2}" class="form-control" placeholder="Digite su nombre..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Condición en el mercado </label>
-							<input type="text" name="nombre" th:field="*{condicion}" class="form-control" placeholder="Digite su nombre..." required>
+							<input type="text" name="nombre" th:field="*{condicion}" class="form-control" placeholder="Digite su nombre..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Precio en el mercado </label>
-							<input type="text" name="nombre" th:field="*{precio}" class="form-control" placeholder="Digite su nombre..." required>
+							<input type="text" name="nombre" th:field="*{precio}" class="form-control" placeholder="Digite su nombre..." required disabled>
 						</div>
 						<div class="form-group">
 							<label>Tipo de vivienda </label>
-							<input type="text" name="nombre" th:field="*{tipo}" class="form-control" placeholder="Digite su nombre..." required>
+							<input type="text" name="nombre" th:field="*{tipo}" class="form-control" placeholder="Digite su nombre..." required disabled>
 						</div>
 						<br>
 						<div class="box-footer">
