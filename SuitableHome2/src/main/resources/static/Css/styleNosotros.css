@@ -1,0 +1,18 @@
+
+.caja{
+    display: flex;
+}
+.caja > div{
+    width: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .caja{
+        display: inline-block;
+    }
+    .caja > div{
+        width: 90%;
+        padding: 10px;
+    }
+}
