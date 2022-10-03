@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Barra de Título-->
-  <title>Suitable Home LLC</title>
+  <title>Departamentos</title>
   <link rel="icon" href="../Imagenes/logo.png">
+  <link rel="stylesheet" href="../Css/styleDep.css">
 <!--Link de Estilos-->
   <style>
     body {text-align:center;     background-color: #eeede9;}
     p {color: #22142b;}
   </style> 
   <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
 <!--Comienzo Banner-->
-  <div id="banner"><img src="../Imagenes/SUITABLEHOME.jpg"width="100%" height="100"/></div>
+<div id="banner"><img src="../Imagenes/SUITABLEHOME.jpg"width="100%" height="100"/></div>
+  
+
+ 
 <!--Barra de navegación-->
 <nav>
   <ul class="menu"> <!-- menu horizontal -->
    <li><a href="index.html"><h3>Inicio</h3></a></li>
 
-   <li><a href="departamento.html"><h3>Departamentos</h3></a>
+   <li><a th:href="@{/departamentos}"><h3>Departamentos</h3></a>
     <ul class="ciudad" > <!-- m vertical -->
        <li><h4>Cundinamarca</h4>
            <ul class="ciudadVerdad">
              <li><a href="Nopagina.html">Tabio</a></li>
-             <li><a href="MapaBogota.html">Bogotá</a></li>
+             <li><a href="mapaBogota.html">Bogotá</a></li>
              <li><a href="Nopagina.html">Madrid</a> 
             </li>
           </ul>
@@ -60,26 +66,44 @@
     </ul>
   </li>
 
-   <li><a href="#"><h3>Sobre Nosotros</h3></a></li>
+   <li><a href="sobreNosotros.html"><h3>Sobre Nosotros</h3></a></li>
 
-   <li><a href="#"><h3>Contáctenos</h3></a></li>
+   <li><a href="contactanos.html"><h3>Contáctenos</h3></a></li>
  </ul>
  </nav>
 </div>
 
 <!--Fin Barra de navegación-->
-</head>
 
-<body>
   <main>
   <!--Fondo-->
     <div class="fondo">
-      <h1>¡Bienvenido!</h1></br>
-      <h3> Aquí en Suitable Home.LLC, podrá encontrar su  casa o apartamento soñado.</h3></br>
-      <!--Lista Desplegable-->
+    
+    <div>
+    	<table>
+			<thead>
+				<tr>
+					<th>Departamento</th>
+					<th>Ciudad</th>
+					<th>Direccion</th>
+					<th>Detalles</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="propiedades : ${propiedades}">
+					<td th:text = "${propiedades.departamento}">Departamento</td>
+					<td th:text = "${propiedades.ciudad}">Ciudad</td>
+					<td th:text = "${propiedades.direccion}">Direccion</td>
+					<td>
+						<a th:href="@{/departamentos/inmueble/{id}(id=${propiedades.id})}">Ver</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
     </div>
-    </main>
-</body>
+  </main>
+
+
 <footer>
   <!--Contacto-->
   <div class="social a">
@@ -99,5 +123,5 @@
   </div>
   </div>
 </footer>
-
+</body>
 </html>

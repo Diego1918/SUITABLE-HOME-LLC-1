@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Barra de Título-->
-  <title>Mapa de Armenia</title>
+  <title>Mapa de Giron</title>
   <link rel="icon" href="../Imagenes/logo.png">
 <!--Link de Estilos-->
   <style>
@@ -23,12 +23,12 @@
   <ul class="menu"> <!-- menu horizontal -->
    <li><a href="index.html"><h3>Inicio</h3></a></li>
 
-   <li><a href="departamento.html"><h3>Departamentos</h3></a>
+   <li><a th:href="@{/departamentos}"><h3>Departamentos</h3></a>
     <ul class="ciudad" > <!-- m vertical -->
        <li><h4>Cundinamarca</h4>
            <ul class="ciudadVerdad">
              <li><a href="Nopagina.html">Tabio</a></li>
-             <li><a href="MapaBogota.html">Bogotá</a></li>
+             <li><a href="mapaBogota.html">Bogotá</a></li>
              <li><a href="Nopagina.html">Madrid</a> 
             </li>
           </ul>
@@ -37,24 +37,24 @@
            <ul class="ciudadVerdad">
              <li><a href="Nopagina.html">Chinchina</a></li>
              <li><a href="Nopagina.html">La Dorada</a></li>
-             <li><a href="MapaManizales.html">Manizales</a></li>
+             <li><a href="mapaManizales.html">Manizales</a></li>
            </ul>
          </li>
          <li><h4>Santander</h4>
            <ul class="ciudadVerdad">
              <li><a href="Nopagina.html">Bucaramanga</a></li>
-             <li><a href="MapaGiron.html">Girón</a></li>
+             <li><a href="mapaGiron.html">Girón</a></li>
              <li><a href="Nopagina.html">Zapatoca</a></li>
            </ul>
            <li><a href=><h4>Magdalena</h4></a>
             <ul class="ciudadVerdad">
-              <li><a href="MapaCartagena.html">Cartagena</a></li>
+              <li><a href="mapaCartagena.html">Cartagena</a></li>
               <li><a href="Nopagina.html">Santa Marta</a></li>
               <li><a href="Nopagina.html">Barranquilla</a></li>
             </ul>
             <li><a href=><h4>Quindío</h4></a>
                <ul class="ciudadVerdad">
-                 <li><a href="MapaArmenia.html">Armenia</a></li>
+                 <li><a href="mapaArmenia.html">Armenia</a></li>
                  <li><a href="Nopagina.html">Pijao</a></li>
                  <li><a href="Nopagina.html">Quimbaya</a></li>
                </ul>
@@ -62,9 +62,9 @@
     </ul>
   </li>
 
-   <li><a href="#"><h3>Sobre Nosotros</h3></a></li>
+   <li><a href="sobreNosotros.html"><h3>Sobre Nosotros</h3></a></li>
 
-   <li><a href="#"><h3>Contáctenos</h3></a></li>
+   <li><a href="contactanos.html"><h3>Contáctenos</h3></a></li>
  </ul>
  </nav>
 </div>
@@ -73,11 +73,21 @@
 </head>
 
 <body>
+
   <main>
   <!--Fondo-->
     <div class="fondo">
+    <div>
+    
+    <div th:each="propiedades:${propiedades}"> 
+    
+<h1>Hola</h1>
+
+	<p th:text="${propiedades.direccion}"></p><br>
+	</div>
+</div>
       <!-- Boton -->
-      <p>Haga click en la direccion del inmueble que desea revisar</p><br>
+      <p>Haga click en la dirección del inmueble que desea revisar</p><br>
       <div class="boton-modal">
         <label for="btn-modal">
           Cra 27 # 28-18
@@ -96,8 +106,9 @@
       <input type="checkbox" id="btn-modal">
       <div class="container-modal">
         <div class="content-modal">
-          <p>Direccion: Cra 29A # 28A-30</p><br>
-          <p>Numero de habitaciones: 3</p><br>
+          <p>Dirección</p>
+          <p data-th-each="propiedades:#{dirección}"></p>
+          <p data-th-text="#{propiedades.habitaciones}"></p><br>
           <p>Numero de baños: 2</p><br>
           <p>Metros cuadrados: 154</p><br>
           <p>Condicion en el mercado: Fuera del mercado</p><br>
