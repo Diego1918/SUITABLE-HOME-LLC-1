@@ -65,9 +65,14 @@ public class PropiedadesControlador {
 	}
 	
 	@GetMapping("/departamentos/inmueble/{id}")
-	public String editarUsuarioFormulario(@PathVariable Long id, Model modelo) {
+	public String consultarInmueble(@PathVariable Long id, Model modelo) {
 		modelo.addAttribute("propiedades", interfaz.obtenerPropiedadPorId(id));
 		return "inmueble";
+	}
+	
+	@PostMapping("/departamentos/{id}")
+	public String inmuebleConsultado() {
+		return "redirect:/departamentos";
 	}
 	
 	@GetMapping("/contactanos.html")
