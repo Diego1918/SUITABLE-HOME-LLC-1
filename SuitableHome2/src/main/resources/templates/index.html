@@ -20,52 +20,52 @@
 <!--Barra de navegación-->
 <nav>
   <ul class="menu"> <!-- menu horizontal -->
-   <li><a href="index.html"><h3>Inicio</h3></a></li>
+   <li><a th:href="@{/inicio}"><h3>Inicio</h3></a></li>
 
    <li><a th:href="@{/departamentos}"><h3>Departamentos</h3></a>
     <ul class="ciudad" > <!-- m vertical -->
        <li><h4>Cundinamarca</h4>
            <ul class="ciudadVerdad">
-             <li><a href="Nopagina.html">Tabio</a></li>
-             <li><a href="mapaBogota.html">Bogotá</a></li>
-             <li><a href="Nopagina.html">Madrid</a> 
+             <li><a th:href="@{/Nopagina}">Tabio</a></li>
+             <li><a th:href="@{/mapaBogota}">Bogotá</a></li>
+             <li><a th:href="@{/Nopagina}">Madrid</a> 
             </li>
           </ul>
        </li>
        <li><h4>Caldas</h4>
            <ul class="ciudadVerdad">
-             <li><a href="Nopagina.html">Chinchina</a></li>
-             <li><a href="Nopagina.html">La Dorada</a></li>
-             <li><a href="mapaManizales.html">Manizales</a></li>
+             <li><a th:href="@{/Nopagina}">Chinchina</a></li>
+             <li><a th:href="@{/Nopagina}">La Dorada</a></li>
+             <li><a th:href="@{/mapaManizales}">Manizales</a></li>
            </ul>
          </li>
          <li><h4>Santander</h4>
            <ul class="ciudadVerdad">
-             <li><a href="Nopagina.html">Bucaramanga</a></li>
-             <li><a href="mapaGiron.html">Girón</a></li>
-             <li><a href="Nopagina.html">Zapatoca</a></li>
+             <li><a th:href="@{/Nopagina}">Bucaramanga</a></li>
+             <li><a th:href="@{/mapaGiron}">Girón</a></li>
+             <li><a th:href="@{/Nopagina}">Zapacota</a></li>
            </ul>
            <li><a href=><h4>Magdalena</h4></a>
             <ul class="ciudadVerdad">
-              <li><a href="mapaCartagena.html">Cartagena</a></li>
-              <li><a href="Nopagina.html">Santa Marta</a></li>
-              <li><a href="Nopagina.html">Barranquilla</a></li>
+              <li><a th:href="@{/mapaCartagena}">Cartagena</a></li>
+              <li><a th:href="@{/Nopagina}">Santa Marta</a></li>
+              <li><a th:href="@{/Nopagina}">Barranquilla</a></li>
             </ul>
             <li><a href=><h4>Quindío</h4></a>
                <ul class="ciudadVerdad">
-                 <li><a href="mapaArmenia.html">Armenia</a></li>
-                 <li><a href="Nopagina.html">Pijao</a></li>
-                 <li><a href="Nopagina.html">Quimbaya</a></li>
+                 <li><a th:href="@{/mapaArmenia}">Armenia</a></li>
+                 <li><a th:href="@{/Nopagina}">Pijao</a></li>
+                 <li><a th:href="@{/Nopagina}">Quimbaya</a></li>
                </ul>
       </li>
     </ul>
   </li>
 
-   <li><a href="sobreNosotros.html"><h3>Sobre Nosotros</h3></a></li>
+   <li><a th:href="@{/sobreNosotros}"><h3>Sobre Nosotros</h3></a></li>
 
-   <li><a href="contactanos.html"><h3>Contáctenos</h3></a></li>
+   <li><a th:href="@{/contactanos}"><h3>Contáctenos</h3></a></li>
  </ul>
- </nav>
+</nav>
 </div>
 
 <!--Fin Barra de navegación-->

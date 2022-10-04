@@ -16,7 +16,6 @@ public class PropiedadesInterfazImpl implements PropiedadesInterfaz {
 	
 	@Override
 	public List<Propiedades> listarTodasLasPropiedades() {
-		//System.out.println(repositorio.findAll());
 		return repositorio.findAll();
 	}
 
