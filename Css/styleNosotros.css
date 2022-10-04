@@ -1,4 +1,7 @@
 
+.fondo{
+  background: url(../Imagenes/fondo2.jpg);
+}
   .box {
     width: 60%;
     background: #475b72a0;
@@ -9,6 +12,20 @@
     font-family: 'Century Gothic', sans-serif;
     border-radius: 15px;
   }
+  .principal{
+    width: 60%;
+    background: #475b72a0;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4%;
+    font-family: 'Century Gothic', sans-serif;
+    color: white;
+  }
+  .principal img{
+    padding: 10px 0px 0px 0px;
+  }
+
   .box-img {
     border-radius: 50%;
   }
@@ -21,8 +38,7 @@
   }
   
   .box h2 {
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 25px;
     font-weight: 100;
     margin-bottom: 10px;
     color: white;
