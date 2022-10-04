@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 
 import com.app.web.interfaz.PropiedadesInterfaz;
@@ -15,47 +16,47 @@ public class PropiedadesControlador {
 	private PropiedadesInterfaz interfaz;
 	
 	
-	@GetMapping("/index.html")
+	@GetMapping("/inicio")
 	public String index() {
 		
-		return "index.html";
+		return "index";
 	}
 	
 
-	@GetMapping("/mapaArmenia.html")
+	@GetMapping("/mapaArmenia")
 	public String mapaArmenia() {
 		
-		return "mapaArmenia.html";
+		return "mapaArmenia";
 	}
 	
-	@GetMapping("/mapaBogota.html")
+	@GetMapping("/mapaBogota")
 	public String mapaBogota() {
 		
-		return "mapaBogota.html";
+		return "mapaBogota";
 	}
 	
-	@GetMapping("/mapaGiron.html")
+	@GetMapping("/mapaGiron")
 	public String mapaGiron (Model model)
 		{model.addAttribute("AllPropiedades",interfaz.listarTodasLasPropiedades());
-		return "mapaGiron.html";
+		return "mapaGiron";
 	}
 		
-	@GetMapping("/mapaManizales.html")
+	@GetMapping("/mapaManizales")
 	public String mapaManizales() {
 		
-		return "mapaManizales.html";
+		return "mapaManizales";
 	}
 	
-	@GetMapping("/mapaCartagena.html")
+	@GetMapping("/mapaCartagena")
 	public String mapaCartagena() {
 		
-		return "mapaCartagena.html";
+		return "mapaCartagena";
 	}
 	
-	@GetMapping("/Nopagina.html")
+	@GetMapping("/Nopagina")
 	public String Nopagina() {
 		
-		return "Nopagina.html";
+		return "Nopagina";
 	}
 	
 	@GetMapping("/departamentos")
@@ -75,15 +76,15 @@ public class PropiedadesControlador {
 		return "redirect:/departamentos";
 	}
 	
-	@GetMapping("/contactanos.html")
+	@GetMapping("/contactanos")
 	public String contactanos() {
 		
-		return "contactanos.html";
+		return "contactanos";
 	}
 	
-	@GetMapping("/sobreNosotros.html")
+	@GetMapping("/sobreNosotros")
 	public String sobreNosotros() {
 		
-		return "sobreNosotros.html";
+		return "sobreNosotros";
 	}
 }
