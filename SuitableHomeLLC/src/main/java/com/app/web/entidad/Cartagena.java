@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Cartagena {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private long id;
 	
 	@Column(name = "direccion", nullable = false, length = 120)
 	private String direccion;
@@ -24,21 +24,27 @@ public class Cartagena {
 	@Column(name = "ciudad", nullable = false, length = 120)
 	private String ciudad;
 	
+	@Column(name = "habitaciones", nullable = false, length = 120)
 	private Integer habitaciones;
 	
+	@Column(name = "banos", nullable = false, length = 120)
 	private Integer banos;
 	
+	@Column(name = "metros2", nullable = false, length = 120)
 	private Integer metros2;
 	
+	@Column(name = "condicion", nullable = false, length = 120)
 	private String condicion;
 	
+	@Column(name = "precio", nullable = false, length = 120)
 	private String precio;
 	
+	@Column(name = "tipo", nullable = false, length = 120)
 	private String tipo;
 	
 	//Constructor
 
-	public Cartagena(Long id, String direccion, String departamento, String ciudad, Integer habitaciones, Integer banos,
+	public Cartagena(long id, String direccion, String departamento, String ciudad, Integer habitaciones, Integer banos,
 			Integer metros2, String condicion, String precio, String tipo) {
 		super();
 		this.id = id;
@@ -68,7 +74,7 @@ public class Cartagena {
 	}
 
 	
-	public Cartagena(Long id) {
+	public Cartagena(long id) {
 		super();
 		this.id = id;
 	}
@@ -79,11 +85,11 @@ public class Cartagena {
 
 	//Getter and Setter
 	
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

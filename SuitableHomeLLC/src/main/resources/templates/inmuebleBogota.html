@@ -15,7 +15,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
 				<h2 class="text-center">Características del inmueble</h2>
 				<div class="card-body">
-					<form th:action="@{/departamentos/{id}(id=${propiedades.id})}" th:object="${propiedades}" method="POST">
+					<form th:action="@{/mapaBogota/{id}(id=${bogota.id})}" th:object="${bogota}" method="POST">
 						<div class="form-group">
 							<label>Dirección </label>
 							<input type="text" name="nombre" th:field="*{direccion}" class="form-control" placeholder="Digite su nombre..." required disabled>
@@ -46,7 +46,7 @@
 						</div>
 						<br>
 						<div class="box-footer">
-							<button th:href="@{/departamentos}" class="btn btn-success">Regresar</button>
+							<button th:href="@{/mapaBogota}" class="btn btn-success">Regresar</button>
 						</div>
 					</form>
 				</div>

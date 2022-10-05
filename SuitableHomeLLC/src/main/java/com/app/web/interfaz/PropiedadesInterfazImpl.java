@@ -74,4 +74,31 @@ public class PropiedadesInterfazImpl implements PropiedadesInterfaz {
 	public void eliminarPropiedad(Long id) {
 		repositorio.deleteById(id);
 	}
+
+	@Override
+	public Armenia obtenerArmeniaPorId(Long id) {
+		return repositorioarmenia.findById(id).get();
+	}
+
+	@Override
+	public Bogota obtenerBogotaPorId(Long id) {
+		return repositoriobogota.findById(id).get();
+	}
+
+	@Override
+	public Giron obtenerGironPorId(Long id) {
+		return repositoriogiron.findById(id).get();
+	}
+
+	@Override
+	public Manizales obtenerManizalesPorId(Long id) {
+		return repositoriomanizales.findById(id).get();
+	}
+
+	@Override
+	public Cartagena obtenerCartagenaPorId(Long id) {
+		return repositoriocartagena.findById(id).get();
+	}
+
+	
 }
