@@ -34,25 +34,80 @@ public class PropiedadesControlador {
 	{model.addAttribute("armenia", interfaz.listarTodosArmenia());
 	return "mapaArmenia";}
 	
+	@GetMapping("/mapaArmenia/inmuebleArmenia/{id}")
+	public String consultarInmuebleArmenia(@PathVariable Long id, Model modelo) {
+		modelo.addAttribute("armenia", interfaz.obtenerArmeniaPorId(id));
+		return "inmuebleArmenia";
+	}
+	
+	@PostMapping("/mapaArmenia/{id}")
+	public String inmuebleConsultadoArmenia() {
+		return "redirect:/mapaArmenia";
+	}
+	
 	@GetMapping("/mapaBogota")
 	public String mapaBogota(Model model) 
 	{model.addAttribute("bogota", interfaz.listarTodosBogota());	
 	return "mapaBogota";}
 	
+	@GetMapping("/mapaBogota/inmuebleBogota/{id}")
+	public String consultarInmuebleBogota(@PathVariable Long id, Model modelo) {
+		modelo.addAttribute("bogota", interfaz.obtenerBogotaPorId(id));
+		return "inmuebleBogota";
+	}
+	
+	@PostMapping("/mapaBogota/{id}")
+	public String inmuebleConsultadoBogota() {
+		return "redirect:/mapaBogota";
+	}
+	
 	@GetMapping("/mapaGiron")
 	public String mapaGiron (Model model)
 	{model.addAttribute("giron",interfaz.listarTodosGiron());
 	return "mapaGiron";}
+	
+	@GetMapping("/mapaGiron/inmuebleGiron/{id}")
+	public String consultarInmuebleGiron(@PathVariable Long id, Model modelo) {
+		modelo.addAttribute("giron", interfaz.obtenerGironPorId(id));
+		return "inmuebleGiron";
+	}
+	
+	@PostMapping("/mapaGiron/{id}")
+	public String inmuebleConsultadoGiron() {
+		return "redirect:/mapaGiron";
+	}
 		
 	@GetMapping("/mapaManizales")
 	public String mapaManizales(Model model)
 	{model.addAttribute("manizales", interfaz.listarTodosManizales());
 	return "mapaManizales";}
 	
+	@GetMapping("/mapaManizales/inmuebleManizales/{id}")
+	public String consultarInmuebleManizales(@PathVariable Long id, Model modelo) {
+		modelo.addAttribute("manizales", interfaz.obtenerManizalesPorId(id));
+		return "inmuebleManizales";
+	}
+	
+	@PostMapping("/mapaManizales/{id}")
+	public String inmuebleConsultadoManizales() {
+		return "redirect:/mapaManizales";
+	}
+	
 	@GetMapping("/mapaCartagena")
 	public String mapaCartagena(Model model) 
 	{model.addAttribute("cartagena", interfaz.listarTodosCartagena());	
 	return "mapaCartagena";}
+	
+	@GetMapping("/mapaCartagena/inmuebleCartagena/{id}")
+	public String consultarInmuebleCartagena(@PathVariable Long id, Model modelo) {
+		modelo.addAttribute("cartagena", interfaz.obtenerCartagenaPorId(id));
+		return "inmuebleCartagena";
+	}
+	
+	@PostMapping("/mapaCartagena/{id}")
+	public String inmuebleConsultadoCartagena() {
+		return "redirect:/mapaCartagena";
+	}
 	
 	@GetMapping("/Nopagina")
 	public String Nopagina() {

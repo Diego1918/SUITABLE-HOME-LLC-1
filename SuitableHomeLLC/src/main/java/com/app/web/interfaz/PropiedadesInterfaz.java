@@ -27,5 +27,15 @@ public interface PropiedadesInterfaz {
 	public List<Cartagena> listarTodosCartagena();
 	public List<Giron> listarTodosGiron();
 	public List<Manizales> listarTodosManizales();
-	
+
+	public Armenia obtenerArmeniaPorId(Long id);
+
+	public Bogota obtenerBogotaPorId(Long id);
+
+	public Giron obtenerGironPorId(Long id);
+
+	public Manizales obtenerManizalesPorId(Long id);
+
+	public Cartagena obtenerCartagenaPorId(Long id);
+		
 }
