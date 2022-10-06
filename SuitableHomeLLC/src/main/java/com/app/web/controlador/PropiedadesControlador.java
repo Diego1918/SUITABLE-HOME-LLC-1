@@ -143,4 +143,10 @@ public class PropiedadesControlador {
 		
 		return "sobreNosotros";
 	}
+	
+	@GetMapping("/error")
+	public String error() {
+		
+		return "error";
+	}
 }
